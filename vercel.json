@@ -1,7 +1,11 @@
 {
-  "buildCommand": "pnpm --filter @workspace/fair-teams build",
-  "outputDirectory": "artifacts/fair-teams/dist/public",
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "artifacts/fair-teams/dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
